@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+}
+header .container img{
+    height: 50px;
+}
+.container{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+}
+
+.container ul li{
+    color: seashell;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.container-two{
+    display: flex;
+}
+
+.container-two li{
+   
+    padding: 10px;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner img{
+    height: 700px;
+    width: 1200px;
+    margin-top: 59px;
+    
+    
+}
+.banner-text{
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    color: seashell;
+    
+  }
+
+  .monthly-tea{
+    display: flex;
+    flex-direction: column;
+    color: seashell;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+
+  .row-one{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .row-two{
+    display: flex;
+    justify-content: center;
+  }
+
+  .row-one img, .row-two img{
+    height: 200px;
+    width: 300px;
+  }
+
+  .tea{
+  margin: 15px;
+  }
+
+  .tea h4{
+    margin: 0;
+    margin-top: 10px;
+  }
+.locations{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+  .text{
+    color: seashell;
+    text-align: center;
+  }
+
+  .variant{
+    display: flex;
+    justify-content: center;
+  }
+
+  .variant div{
+    border: 1px solid seashell;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 2;
+    margin-left: 10px;
+    background-color: black;
+  }
+
+  .centered-location{
+    position: absolute;
+    top: 50%;
+    
+  }
+
+  .location-heading{
+    margin: 0;
+    margin-bottom: 15px;
+  }
