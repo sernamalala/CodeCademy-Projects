@@ -1,138 +1,168 @@
-body{
-    background-color: black;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
+body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  overflow-x: hidden;
 }
-header{
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    z-index: 1;
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
 }
-header .container img{
-    height: 50px;
+header .container img {
+  height: 50px;
 }
-.container{
-    height: 68px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid seashell;
-}
-
-.container ul li{
-    color: seashell;
-    list-style: none;
-    text-decoration: underline;
+.container {
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
 }
 
-.container-two{
-    display: flex;
+.container ul li {
+  color: seashell;
+  list-style: none;
+  text-decoration: underline;
 }
 
-.container-two li{
-   
-    padding: 10px;
+.container-two {
+  display: flex;
+}
 
+.container-two li {
+  padding: 10px;
 }
-.banner{
-    display: flex;
-    justify-content: center;
-    position: relative;
+.banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.banner img{
-    height: 700px;
-    width: 1200px;
-    margin-top: 59px;
-    
-    
+.banner img {
+  height: 700px;
+  width: 1200px;
+  margin-top: 59px;
 }
-.banner-text{
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
+.banner-text {
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
 .centered {
-    position: absolute;
-    top: 50%;
-    background-color: black;
-    color: seashell;
-    
-  }
-
-  .monthly-tea{
-    display: flex;
-    flex-direction: column;
-    color: seashell;
-    text-align: center;
-    width: 1000px;
-    margin: 0 auto;
-  }
-
-
-  .row-one{
-    display: flex;
-    justify-content: center;
-    
-  }
-
-  .row-two{
-    display: flex;
-    justify-content: center;
-  }
-
-  .row-one img, .row-two img{
-    height: 200px;
-    width: 300px;
-  }
-
-  .tea{
-  margin: 15px;
-  }
-
-  .tea h4{
-    margin: 0;
-    margin-top: 10px;
-  }
-.locations{
-    display: flex;
-    justify-content: center;
-    position: relative;
+  position: absolute;
+  top: 30%;
+  padding: 30px;
+  background-color: black;
+  color: seashell;
 }
 
+.monthly-tea {
+  display: flex;
+  flex-direction: column;
+  color: seashell;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
 
-  .text{
-    color: seashell;
-    text-align: center;
+.row-one {
+  display: flex;
+  justify-content: center;
+}
+
+.row-two {
+  display: flex;
+  justify-content: center;
+}
+
+.row-one img,
+.row-two img {
+  height: 200px;
+  width: 300px;
+}
+
+.tea {
+  margin: 15px;
+}
+
+.tea h4 {
+  margin: 0;
+  margin-top: 10px;
+}
+.locations {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.text {
+  color: seashell;
+  text-align: center;
+}
+
+.variant {
+  display: flex;
+  justify-content: center;
+}
+
+.variant div {
+  border: 1px solid seashell;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 2;
+  margin-left: 10px;
+  background-color: black;
+}
+
+.centered-location {
+  position: absolute;
+  top: 30%;
+}
+
+.location-heading {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    justify-content: stretch;
   }
-
-  .variant{
+  .banner-text {
+    width: max-content;
+    padding: 30px;
+  }
+  .centered {
+    top: 30%;
+  }
+  .row-one {
     display: flex;
-    justify-content: center;
   }
 
-  .variant div{
-    border: 1px solid seashell;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    line-height: 2;
-    margin-left: 10px;
-    background-color: black;
+  .row-two {
+    display: flex;
   }
-
-  .centered-location{
-    position: absolute;
-    top: 50%;
-    
-  }
-
-  .location-heading{
+  .centered-location {
+    background-image: url("../images/img-locations-background.jpg");
+    height: 500px;
     margin: 0;
-    margin-bottom: 15px;
+    padding: 60px;
   }
+  .locations img {
+    display: none;
+  }
+  .centered-location {
+    position: absolute;
+    top: 15%;
+    left: 30px;
+  }
+}
